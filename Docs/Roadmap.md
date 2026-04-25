@@ -1,112 +1,121 @@
-# 🚀 Roadmap — Fechadura Eletrônica em FPGA
+# Roadmap — Electronic Lock on FPGA
 
-Este documento apresenta o progresso do desenvolvimento do projeto de fechadura eletrônica, destacando o que já foi concluído, o que está em andamento e os próximos passos.
-
----
-
-## 📌 Visão Geral
-
-- 🎯 Objetivo: Desenvolver uma fechadura eletrônica em FPGA utilizando SystemVerilog
-- 🧩 Arquitetura modular:
-  - Teclado
-  - Operacional
-  - Setup
-  - Display
-- ⚙️ Abordagem:
-  - Simulação
-  - Síntese
-  - Testes em hardware
+This document presents the progress of the electronic lock project development, highlighting what has already been completed, what is in progress, and the next steps.
 
 ---
 
-## ✅ Concluído
+## 📌 Overview
 
-- [x] Definição da arquitetura do sistema
-- [x] Modelagem inicial do projeto
-- [x] Implementação do módulo de teclado
-- [x] Sistema de leitura do teclado matricial
-- [x] Implementação de debounce
-- [x] Conversão de teclas para BCD
-- [x] Armazenamento de até 20 dígitos
-- [x] Implementação de timeout de entrada (5s)
-- [x] Tratamento das teclas especiais (* e #)
-- [x] Simulação do módulo de teclado
-- [x] Síntese validada em FPGA
+- 🎯 Objective: To develop an electronic lock on an FPGA using SystemVerilog
+- 🧩 Modular Architecture:
 
----
+- Keyboard
 
-## 🚧 Em Desenvolvimento
+- Operational
 
-- [ ] Integração inicial entre módulos
-- [ ] Estrutura base do módulo setup
-- [ ] Definição dos estados principais do sistema
-- [ ] Comunicação entre teclado e setup
+- Setup
+
+- Display
+- ⚙️ Approach:
+
+- Simulation
+
+- Synthesis
+
+- Hardware Testing
 
 ---
 
-## 🔜 Próximos Passos
+## ✅ Completed
 
-### 🔷 Módulo Operacional
-- [ ] Implementar validação de senha
-- [ ] Implementar controle da tranca
-- [ ] Implementar controle de tentativas
-- [ ] Implementar bloqueio por erro
-- [ ] Implementar controle do bip
-- [ ] Implementar lógica de porta (aberta/fechada)
-
----
-
-### 🔷 Módulo Setup (Configuração)
-- [ ] Implementar entrada no modo configuração
-- [ ] Implementar autenticação (senha master)
-- [ ] Implementar navegação do menu
-- [ ] Implementar configuração de tempos
-- [ ] Implementar configuração de senhas
-- [ ] Integração com módulo operacional
+- [x] System Architecture Definition
+- [x] Initial Project Modeling
+- [x] Keyboard Module Implementation
+- [x] Matrix Keyboard Reading System
+- [x] Debounce Implementation
+- [x] Key Conversion to BCD
+- [x] Storage of up to 20 digits
+- [x] Input Timeout Implementation (5s)
+- [x] Handling of Special Keys (* and #)
+- [x] Keyboard Module Simulation
+- [x] Synthesis Validated in FPGA
 
 ---
 
-### 🔷 Módulo Display
-- [ ] Implementar driver de display 7 segmentos
-- [ ] Exibir valores no modo operacional
-- [ ] Exibir menus no modo configuração
-- [ ] Exibir erros e estados do sistema
+## 🚧 Under Development
+
+- [ ] Initial integration between modules
+- [ ] Basic structure of the setup module
+- [ ] Definition of the main system states
+- [ ] Communication between keyboard and setup
 
 ---
 
-### 🔷 Integração Final
-- [ ] Integração de todos os módulos
-- [ ] Testes completos do sistema
-- [ ] Testes em FPGA
-- [ ] Ajustes de timing e desempenho
+## 🔜 Next Steps
+
+### 🔷 Operational Module
+- [ ] Implement password validation
+- [ ] Implement lock control
+- [ ] Implement attempt control
+- [ ] Implement error locking
+- [ ] Implement beep control
+- [ ] Implement door logic (open/closed)
 
 ---
 
-## 🧪 Testes e Validação
-
-- [ ] Testes de integração entre módulos
-- [ ] Testes de entrada inválida
-- [ ] Testes de timeout
-- [ ] Testes de múltiplas tentativas
-- [ ] Testes de configuração
-- [ ] Testes com hardware real
-
----
-
-## 🎯 Melhorias Futuras (Opcional)
-
-- [ ] Interface mais intuitiva no display
-- [ ] Log de tentativas de acesso
-- [ ] Sistema de múltiplos usuários
-- [ ] Comunicação com sistemas externos (IoT)
-- [ ] Aplicação mobile/web para controle
+### 🔷 Setup Module (Configuration)
+- [ ] Implement entry into configuration mode
+- [ ] Implement authentication (master password)
+- [ ] Implement menu navigation
+- [ ] Implement time configuration
+- [ ] Implement password configuration
+- [ ] Integration with operational module
 
 ---
 
-## 🧠 Observações
+### 🔷 Module Display
+- [ ] Implement 7-segment display driver
+- [ ] Display values ​​in operating mode
+- [ ] Display menus in configuration mode
+- [ ] Display system errors and states
 
-- O projeto está sendo desenvolvido de forma modular, permitindo evolução incremental.
-- O código-fonte completo do design será disponibilizado posteriormente.
-- A documentação está sendo construída paralelamente ao desenvolvimento.
+---
+
+### 🔷 Final Integration
+- [ ] Integration of all modules
+- [ ] Complete system tests
+- [ ] FPGA tests
+- [ ] Timing and performance adjustments
+
+---
+
+## 🧪 Testing and Validation
+
+- [ ] Integration tests between modules
+- [ ] Invalid input tests
+- [ ] Timeout tests
+- [ ] Multiple attempt tests
+- [ ] Configuration tests
+- [ ] Tests with real hardware
+
+---
+
+## 🎯 Future Improvements (Optional)
+
+- [ ] More intuitive display interface
+- [ ] Access attempt log
+- [ ] Multi-user system
+- [ ] Communication with external systems (IoT)
+- [ ] Application Mobile/Web Control
+
+---
+
+## 🧠 Notes
+
+- The project is being developed in a modular way, allowing for incremental evolution.
+
+- The complete source code for the design will be made available later.
+
+- Documentation is being built in parallel with development.
 
 ---
