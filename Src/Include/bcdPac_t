@@ -1,1 +1,8 @@
-
+typedef struct packed { 
+logic [3:0] BCD0; 
+logic [3:0] BCD1; 
+logic [3:0] BCD2; 
+logic [3:0] BCD3; 
+logic [3:0] BCD4; 
+logic [3:0] BCD5; 
+} bcdPac_t; 
